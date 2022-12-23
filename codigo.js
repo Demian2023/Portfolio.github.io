@@ -1,0 +1,33 @@
+const contacto = () => {
+    window.open("https://api.whatsapp.com/send?phone=5493462662288&text=");
+}
+
+// document.addEventListener("mousemove", parallax)
+
+// function parallax(e) {
+//     document.querySelectorAll(".objeto").forEach(function(move) {
+//         var x = e.clientX / 15;
+//         var y = e.clientY / 15;
+
+//         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+//     });
+// }
+
+var tl = gsap.timeline();
+tl.from(".foto", { delay: 1, duration: 2, opacity: 0, x: 200, rotate: 25, ease: "power2" });
+tl.from(".soy", { duration: 1.5, y: 100, x: '-100vw', ease: "power1" }, "-=1.5");
+
+
+const cuerpoRedes = document.querySelector('.cuerpoRedes');
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".cuerpoRedes", {
+    scrollTrigger: {
+        trigger: ".cuerpoRedes",
+        toggleActions: "restart restart",
+    },
+    delay: .25,
+    x: "-100vw",
+    duration: 2,
+})
