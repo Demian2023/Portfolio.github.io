@@ -62,6 +62,23 @@ a:hover {
     padding-bottom: auto;
 }
 
+.toggle {
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35px;
+    height: 35px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .hola {
     white-space: nowrap;
     border-right: 4px solid;
@@ -95,19 +112,19 @@ a:hover {
 }
 
 .cuerpo {
-    padding: 5%;
+    padding: 50px;
     display: flex;
     height: 93vh;
 }
 
 .cuerpoIzq {
-    margin-top: 5%;
+    margin-top: 20px;
 }
 
 .cuerpoDer {
     width: 100%;
-    margin-top: 5%;
-    padding-right: 10%;
+    margin-top: 20px;
+    padding-right: 50px;
     display: flex;
     justify-content: right;
 }
@@ -116,6 +133,11 @@ a:hover {
     height: 300px;
     border-radius: 15%;
     position: absolute;
+}
+
+.redes {
+    height: 200px;
+    padding-top: 100px;
 }
 
 .cuerpoRedes {
@@ -158,4 +180,40 @@ a:hover {
     height: 55px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .foto {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .foto {
+        height: 200px;
+    }
+    .cuerpoDer {
+        padding-right: 0px;
+    }
+    .navegador {
+        align-items: flex-start;
+        height: fit-content;
+    }
+    .der {
+        display: none;
+        flex-direction: column;
+    }
+    .toggle {
+        display: flex;
+    }
+    .toggle:hover {
+        background-color: #BDB9EB;
+        border-radius: 5px;
+    }
+    .der.active {
+        display: flex;
+    }
+    .cuerpo.active {
+        padding-top: 100px;
+    }
 }
