@@ -189,9 +189,42 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 400px) {
     .foto {
         height: 200px;
+    }
+    .cuerpoDer {
+        padding-right: 0px;
+    }
+    .navegador {
+        align-items: flex-start;
+        height: fit-content;
+    }
+    .der {
+        display: none;
+        flex-direction: column;
+    }
+    .toggle {
+        display: flex;
+    }
+    .toggle:hover {
+        background-color: #BDB9EB;
+        border-radius: 5px;
+    }
+    .der.active {
+        display: flex;
+    }
+    .cuerpo.active {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .foto {
+        height: 175px;
+    }
+    .cuerpo {
+        padding: 25px;
     }
     .cuerpoDer {
         padding-right: 0px;
