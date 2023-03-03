@@ -10,7 +10,7 @@ body {
 .fondo {
     width: 100%;
     height: 100vh;
-    background-image: "../images/portBackground.jpg";
+    background-image: url("../images/portBackground.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
