@@ -378,3 +378,17 @@ a:hover {
         padding-top: 100px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .cuerpo {
+        margin-top: 1em;
+        display: block;
+        height: 120vh;
+    }
+    .cuerpoIzq {
+        width: 100%;
+    }
+    .cuerpoDer {
+        width: 100%;
+    }
+}
